@@ -2089,6 +2089,11 @@
       </dependency>
       <dependency>
         <groupId>org.richfaces.core</groupId>
+        <artifactId>richfaces-core-api</artifactId>
+        <version>${nuxeo.richfaces.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.richfaces.core</groupId>
         <artifactId>richfaces-core-impl</artifactId>
         <version>${nuxeo.richfaces.version}</version>
       </dependency>
