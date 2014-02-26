@@ -171,8 +171,14 @@
     <eclipseVersion>${project.version}</eclipseVersion>
     <!-- Convenient property; prefer use of the right property (runtime/core/...) -->
     <nuxeo.platform.version>5.9.3-SNAPSHOT</nuxeo.platform.version>
-    <seam.version>2.1.0.SP1</seam.version>
+    <seam.version>2.3.1.Final</seam.version>
+    <!--<nxseam.version>2.3.1.Final.NX1</nxseam.version>-->
+    <nxseam.version>2.3.1.Final</nxseam.version>
     <nxseam.version>2.1.0.SP1-NX2</nxseam.version>
+    <!--
+      https://community.jboss.org/wiki/RichFacesMigrationGuide33x-4xMigration
+      https://community.jboss.org/wiki/RichFaces33-4xMigrationGuideUnleashed
+    -->
 
     <org.ops4j.pax.version>3.0.0</org.ops4j.pax.version>
     <org.slf4j.version>1.7.5</org.slf4j.version>
@@ -681,6 +687,11 @@
       </dependency>
 
       <!-- Nuxeo JSF -->
+      <dependency>
+        <groupId>javax.validation</groupId>
+        <artifactId>validation-api</artifactId>
+        <version>1.0.0.GA</version>
+      </dependency>
       <dependency>
         <groupId>org.nuxeo.ecm.platform</groupId>
         <artifactId>nuxeo-platform-contentview-jsf</artifactId>
@@ -1923,7 +1934,7 @@
       <dependency>
         <groupId>org.jboss.el</groupId>
         <artifactId>jboss-el</artifactId>
-        <version>1.0_02.CR2</version>
+        <version>1.0_02.CR6</version>
       </dependency>
       <dependency>
         <groupId>jboss</groupId>
@@ -2085,6 +2096,11 @@
       <dependency>
         <groupId>org.richfaces.ui</groupId>
         <artifactId>richfaces-components-ui</artifactId>
+        <version>${nuxeo.richfaces.version}</version>
+      </dependency>
+      <dependency>
+	<groupId>org.richfaces.ui.core</groupId>
+	<artifactId>richfaces-ui-core-ui</artifactId>
         <version>${nuxeo.richfaces.version}</version>
       </dependency>
       <dependency>
